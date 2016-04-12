@@ -21,38 +21,47 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-pv-z6V">
                                 <rect key="frame" x="40" y="100" width="520" height="420"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SmC-AB-1Jm">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SmC-AB-1Jm">
                                         <rect key="frame" x="0.0" y="0.0" width="520" height="140"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-dI-5XA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-dI-5XA">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="140"/>
                                                 <state key="normal" image="paper"/>
                                                 <connections>
+                                                    <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPt-ef-2Or"/>
                                                     <action selector="presentViewControllerWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkK-iT-iNJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iva-wJ-iNW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="iva-wJ-iNW">
                                         <rect key="frame" x="0.0" y="140" width="520" height="140"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEa-2p-6qu">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEa-2p-6qu">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
                                                 <state key="normal" image="rock"/>
+                                                <connections>
+                                                    <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5g-mC-omN"/>
+                                                    <action selector="presentViewControllerWithCodeAndSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybJ-BP-0wV"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8F-v4-cqG">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8F-v4-cqG">
                                                 <rect key="frame" x="280" y="0.0" width="240" height="140"/>
                                                 <state key="normal" image="scissors"/>
+                                                <connections>
+                                                    <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VK-xD-jHq"/>
+                                                    <segue destination="gVm-lt-C2J" kind="show" identifier="showResult2" id="Uaa-M1-T9f"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="q8F-v4-cqG" firstAttribute="width" secondItem="yEa-2p-6qu" secondAttribute="width" id="AAg-Eq-5S3"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kz4-pI-Ui5">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kz4-pI-Ui5">
                                         <rect key="frame" x="0.0" y="280" width="520" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Let's Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blA-B8-IyF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blA-B8-IyF">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="140"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -71,6 +80,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sog-pv-z6V" secondAttribute="bottom" constant="80" id="wKX-mQ-xn6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="gVm-lt-C2J" kind="show" identifier="showResult" id="VLQ-pY-rTJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,10 +125,13 @@
                             <constraint firstItem="bP9-f3-Ukf" firstAttribute="centerX" secondItem="qYR-jd-Jjz" secondAttribute="centerX" id="LG2-28-zI8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="qcP-EU-bLu" id="CLP-SE-1DA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgM-Oa-At4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="353"/>
+            <point key="canvasLocation" x="1123" y="362"/>
         </scene>
     </scenes>
     <resources>
@@ -125,4 +140,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uaa-M1-T9f"/>
+    </inferredMetricsTieBreakers>
 </document>

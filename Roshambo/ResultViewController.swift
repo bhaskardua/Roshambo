@@ -9,9 +9,14 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
+    var resultText: String?
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.resultLabel.text = resultText
 
         // Do any additional setup after loading the view.
     }
@@ -31,5 +36,7 @@ class ResultViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+
 
 }
