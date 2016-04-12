@@ -126,6 +126,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultImageView" destination="0kA-nM-7XP" id="E88-2w-lxa"/>
                         <outlet property="resultLabel" destination="qcP-EU-bLu" id="CLP-SE-1DA"/>
                     </connections>
                 </viewController>

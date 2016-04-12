@@ -81,19 +81,25 @@ class GameViewController: UIViewController {
         if segue.identifier == "showResult" {
             let resultVC = segue.destinationViewController as! ResultViewController
             let resultText: String
+            let resultImage: UIImage
             
             switch result! {
             case Results.itsATie:
                 resultText = "It's a tie"
+                resultImage = UIImage(named: "itsATie")!
             case Results.PaperCoversRock:
                 resultText = "Paper Covers Rock"
+                resultImage = UIImage(named: "PaperCoversRock")!
             case Results.RockCrushesScissors:
                 resultText = " Rock Crushes Scissors"
+                resultImage = UIImage(named: "RockCrushesScissors")!
             case Results.ScissorsCutsPaper:
                 resultText = "Scissors Cuts Paper"
+                resultImage = UIImage(named: "ScissorsCutsPaper")!
             }
 
             resultVC.resultText = resultText
+            resultVC.resultImage = resultImage
         }
     }
     

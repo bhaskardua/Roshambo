@@ -11,12 +11,15 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var resultText: String?
+    var resultImage: UIImage?
     
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var resultImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.resultLabel.text = resultText
+        self.resultImageView.image = resultImage
 
         // Do any additional setup after loading the view.
     }
