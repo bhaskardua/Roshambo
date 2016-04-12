@@ -30,6 +30,9 @@ class ResultViewController: UIViewController {
     }
     
 
+    @IBAction func dismissResultVC(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

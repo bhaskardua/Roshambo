@@ -115,6 +115,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxd-vU-Mow">
                                         <rect key="frame" x="0.0" y="240" width="160" height="120"/>
                                         <state key="normal" title="Play Again!"/>
+                                        <connections>
+                                            <action selector="dismissResultVC:" destination="gVm-lt-C2J" eventType="touchUpInside" id="6fC-Bk-NmU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
