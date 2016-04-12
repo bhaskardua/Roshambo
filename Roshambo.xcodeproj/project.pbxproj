@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C7D0EB61CBA301F00F9E729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D0EB51CBA301F00F9E729 /* AppDelegate.swift */; };
-		0C7D0EB81CBA301F00F9E729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D0EB71CBA301F00F9E729 /* ViewController.swift */; };
+		0C7D0EB81CBA301F00F9E729 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D0EB71CBA301F00F9E729 /* GameViewController.swift */; };
 		0C7D0EBB1CBA301F00F9E729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D0EB91CBA301F00F9E729 /* Main.storyboard */; };
 		0C7D0EBD1CBA301F00F9E729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D0EBC1CBA301F00F9E729 /* Assets.xcassets */; };
 		0C7D0EC01CBA301F00F9E729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D0EBE1CBA301F00F9E729 /* LaunchScreen.storyboard */; };
 		0C7D0ECB1CBA301F00F9E729 /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D0ECA1CBA301F00F9E729 /* RoshamboTests.swift */; };
 		0C7D0ED61CBA301F00F9E729 /* RoshamboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D0ED51CBA301F00F9E729 /* RoshamboUITests.swift */; };
+		0C7D0EE41CBA472000F9E729 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D0EE31CBA472000F9E729 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		0C7D0EB21CBA301F00F9E729 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7D0EB51CBA301F00F9E729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C7D0EB71CBA301F00F9E729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C7D0EB71CBA301F00F9E729 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0C7D0EBA1CBA301F00F9E729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C7D0EBC1CBA301F00F9E729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C7D0EBF1CBA301F00F9E729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		0C7D0ED11CBA301F00F9E729 /* RoshamboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7D0ED51CBA301F00F9E729 /* RoshamboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboUITests.swift; sourceTree = "<group>"; };
 		0C7D0ED71CBA301F00F9E729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7D0EE31CBA472000F9E729 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				0C7D0EB51CBA301F00F9E729 /* AppDelegate.swift */,
-				0C7D0EB71CBA301F00F9E729 /* ViewController.swift */,
+				0C7D0EB71CBA301F00F9E729 /* GameViewController.swift */,
 				0C7D0EB91CBA301F00F9E729 /* Main.storyboard */,
+				0C7D0EE31CBA472000F9E729 /* ResultViewController.swift */,
 				0C7D0EBC1CBA301F00F9E729 /* Assets.xcassets */,
 				0C7D0EBE1CBA301F00F9E729 /* LaunchScreen.storyboard */,
 				0C7D0EC11CBA301F00F9E729 /* Info.plist */,
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C7D0EB81CBA301F00F9E729 /* ViewController.swift in Sources */,
+				0C7D0EB81CBA301F00F9E729 /* GameViewController.swift in Sources */,
 				0C7D0EB61CBA301F00F9E729 /* AppDelegate.swift in Sources */,
+				0C7D0EE41CBA472000F9E729 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
