@@ -124,8 +124,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bP9-f3-Ukf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aeC-zQ-9eA" secondAttribute="bottom" constant="8" id="65K-Vi-a9A"/>
+                            <constraint firstItem="bP9-f3-Ukf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qYR-jd-Jjz" secondAttribute="leadingMargin" constant="8" id="7HT-qI-kyX"/>
                             <constraint firstItem="bP9-f3-Ukf" firstAttribute="centerY" secondItem="qYR-jd-Jjz" secondAttribute="centerY" id="7Ut-Wu-mfE"/>
                             <constraint firstItem="bP9-f3-Ukf" firstAttribute="centerX" secondItem="qYR-jd-Jjz" secondAttribute="centerX" id="LG2-28-zI8"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bP9-f3-Ukf" secondAttribute="trailing" constant="8" id="trk-sQ-knc"/>
                         </constraints>
                     </view>
                     <connections>
